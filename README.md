@@ -5,7 +5,7 @@ An intelligent order reassignment system that automatically detects when deliver
 ## Features
 
 - **Agentic Re-planning Loop**: Automatically detects agent offline events and generates reassignment suggestions
-- **AI-Powered Recommendations**: Uses OpenAI GPT-4o to analyze order context and agent availability
+- **AI-Powered Recommendations**: Uses OpenAI GPT-5.4 to analyze order context and agent availability
 - **Real-time Streaming**: SSE-based streaming shows AI reasoning token-by-token
 - **Human-in-the-Loop**: Suggestions require ops approval before assignment changes
 - **Pluggable Routing**: Switchable between rule-based and AI strategies at runtime
@@ -18,7 +18,7 @@ An intelligent order reassignment system that automatically detects when deliver
 | Frontend | React 18, Vite, TypeScript, shadcn/ui |
 | Database | H2 (in-memory) |
 | Cache/Streaming | Redis |
-| AI | OpenAI GPT-4o |
+| AI | OpenAI GPT-5.4 |
 
 ## Quick Start (< 5 minutes)
 
@@ -108,7 +108,7 @@ Key settings in `backend/src/main/resources/application.properties`:
 # LLM Provider (openai, gemini, groq, ollama)
 llm.provider=openai
 llm.api-key=${LLM_API_KEY}
-llm.model=gpt-4o
+llm.model=gpt-5.4
 
 # Routing Strategy (rule-based or ai)
 routing.strategy=ai
