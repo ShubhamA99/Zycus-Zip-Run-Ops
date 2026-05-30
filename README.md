@@ -110,8 +110,6 @@ llm.provider=openai
 llm.api-key=${LLM_API_KEY}
 llm.model=gpt-5.4
 
-# Routing Strategy (rule-based or ai)
-routing.strategy=ai
 
 # Redis
 spring.data.redis.host=localhost
